@@ -8,8 +8,8 @@ $(document).ready(function () {
   const reset = getQueryParam("reset");
 
   if (reset == 1) {
-    cart = [];
-    orderHistory = [];
+    localStorage.setItem("orderHistory", JSON.stringify([]));
+    localStorage.setItem("cart", JSON.stringify([]));
   }
   // Memuat data barang dari file JSON
   $.getJSON("data-barang.json", function (data) {
