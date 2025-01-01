@@ -191,7 +191,9 @@ $(document).ready(function () {
       <strong>ID Pesanan:</strong> ${order.id}<br>
       <strong>Nama:</strong> ${order.nama}<br>
       <strong>WA:</strong> ${order.wa}<br>
-      <strong>${order.status ? "Selesai" : "Belum selesai"}</strong>
+      <strong>Status:</strong> ${
+        order.status ? "Selesai" : "Belum selesai"
+      } <br>
       <strong>Metode Pembayaran:</strong> ${order.metodePembayaran}`);
 
     renderProduk(order.pesanan);
