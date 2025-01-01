@@ -57,7 +57,7 @@
                 menciptakan pengalaman belanja yang lebih efisien dan nyaman.
               </p>
             </div>
-            <div class="col-sm-4 offset-md-1 py-4">
+            <div class="col-sm-4 offset-md-1">
               <label for="" class="form-label text-white"
                 >Cari riwayat pemesanan</label
               >
@@ -73,12 +73,40 @@
                     />
                   </div>
 
-                  <div class="col-md-2">
+                  <div class="col-2">
                     <button type="submit" class="btn btn-primary">Cari</button>
                   </div>
                 </div>
               </form>
             </div>
+          </div>
+          <!-- Keranjang untuk mobile -->
+          <div class="d-lg-none py-3">
+            <a
+              href="/keranjang.html"
+              class="text-white d-flex align-items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                aria-hidden="true"
+                class="me-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M6 6h15l-1.5 9H6z" />
+                <path d="M6 6L4 4H1" />
+                <circle cx="9" cy="20" r="1" />
+                <circle cx="18" cy="20" r="1" />
+              </svg>
+              <strong>Keranjang</strong>
+              <span class="badge bg-primary rounded-pill totalKeranjang"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -105,29 +133,34 @@
             </svg>
             <strong>Kantin Bintara</strong>
           </a>
-          <div class="">
-            <a href="/keranjang.html" class="navbar-brand">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                aria-hidden="true"
-                class="me-2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M6 6h15l-1.5 9H6z" />
-                <path d="M6 6L4 4H1" />
-                <circle cx="9" cy="20" r="1" />
-                <circle cx="18" cy="20" r="1" />
-              </svg>
-              <strong>Keranjang</strong>
-              <span class="badge bg-primary rounded-pill totalKeranjang"></span>
-            </a>
+          <div class="d-flex align-items-center">
+            <!-- Keranjang untuk desktop -->
+            <div class="d-none d-lg-block">
+              <a href="/keranjang.html" class="navbar-brand">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                  class="me-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M6 6h15l-1.5 9H6z" />
+                  <path d="M6 6L4 4H1" />
+                  <circle cx="9" cy="20" r="1" />
+                  <circle cx="18" cy="20" r="1" />
+                </svg>
+                <strong>Keranjang</strong>
+                <span
+                  class="badge bg-primary rounded-pill totalKeranjang"
+                ></span>
+              </a>
+            </div>
             <button
               class="navbar-toggler"
               type="button"

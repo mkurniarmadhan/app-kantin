@@ -26,14 +26,14 @@ $(document).ready(function () {
     categoryList.empty();
     categoryList.append(`
       
-       <div class="form-check form-check-inline">
+       <div class="form-check form-check-inline mb-3">
            <input type="radio" class="btn-check filterCategory" id="category-all" name="category" data-category="all" autocomplete="off">
       <label class="btn btn-outline-primary" for="category-all">semua</label><br></div>
      
   `);
     categories.forEach((category, index) => {
       categoryList.append(`
-          <div class="form-check form-check-inline">
+          <div class="form-check form-check-inline mb-3">
     <input type="radio" class="btn-check filterCategory" id="category-${index}" name="category" data-category="${category}" autocomplete="off">
       <label class="btn btn-outline-primary" for="category-${index}">${category}</label><br> </div>
 `);
@@ -151,6 +151,7 @@ $(document).ready(function () {
     const orderId = getQueryParam("order");
 
     if (idPesanan) $("#nomor_identitas").val(idPesanan);
+    if (orderId) $("#orderId").val(orderId);
     if (idPesanan === "admin") {
       isAdmin = true;
       $("#konfirmasiPesanan").removeClass("d-none");
