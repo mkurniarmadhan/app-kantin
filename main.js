@@ -3,9 +3,14 @@ $(document).ready(function () {
   let categories = []; // Daftar kategori unik
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   let orderHistory = JSON.parse(localStorage.getItem("orderHistory")) || [];
+  let isAdmin = false;
 
-  console.log(orderHistory);
+  const reset = getQueryParam("order");
 
+  if (reset == 1) {
+    cart = [];
+    orderHistory = [];
+  }
   // Memuat data barang dari file JSON
   $.getJSON("data-barang.json", function (data) {
     items = data;
@@ -146,20 +151,33 @@ $(document).ready(function () {
     const orderId = getQueryParam("order");
 
     if (idPesanan) $("#nomor_identitas").val(idPesanan);
+    if (idPesanan === "admin") {
+      isAdmin = true;
+      $("#konfirmasiPesanan").removeClass("d-none");
+    }
 
-    const filteredOrders = orderHistory.filter(
-      (order) => order.nomorIdentitas === idPesanan
-    );
+    const filteredOrders = isAdmin
+      ? orderHistory
+      : orderHistory.filter((order) => order.nomorIdentitas === idPesanan);
+
     const riwayatPesanan = $("#riwayatPesanan");
     riwayatPesanan.empty();
 
     if (filteredOrders.length > 0) {
       filteredOrders.forEach((order) => {
+        const { pesanan } = order;
+        let total = 0;
+
+        pesanan.forEach((item) => {
+          const subtotal = item.qty * item.price;
+          total += subtotal;
+        });
+
         riwayatPesanan.append(`
           <tr>
             <td>${order.id}</td>
             <td>${order.nama}</td>
-            <td>${order.wa}</td>
+            <td>${total}</td>
             <td>${order.metodePembayaran}</td>
             <td>${order.status ? "Selesai" : "Belum selesai"}</td>
             <td><a href="riwayat.html?id=${idPesanan}&order=${
@@ -179,13 +197,58 @@ $(document).ready(function () {
     }
   }
 
+  function kirimPesanWhatsApp(nama, wa, barang, totalBayar, metodeBayar) {
+    // Membuat pesan WhatsApp
+    let pesan = `Hallo, *${nama}*\n\nPesanan kamu sudah selesai, berikut detail pesanan kamu:\n\n`;
+
+    // Loop untuk barang
+    barang.forEach((item) => {
+      pesan += `*${item.name}* : ${item.price} x ${item.qty} = ${
+        item.price * item.qty
+      }\n`;
+    });
+
+    pesan += `\n*TOTAL BAYAR* = ${totalBayar}\n*METODE BAYAR* = ${metodeBayar}`;
+
+    wa = wa.replace(/^0/, "62");
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${wa}&text=${encodeURIComponent(
+      pesan
+    )}`;
+
+    return whatsappUrl;
+  }
+
   function renderOrderDetail(order) {
     const detailPesanan = $("#detailPesanan").removeClass("d-none").empty();
-
     if (!order) {
       detailPesanan.html("Pesanan tidak ditemukan.").addClass("alert-danger");
       return;
     }
+
+    const { nama, wa, pesanan, metodePembayaran } = order;
+
+    let total = 0;
+    pesanan.forEach((item) => {
+      const subtotal = item.qty * item.price;
+      total += subtotal;
+    });
+
+    const pesanWhatsApp = kirimPesanWhatsApp(
+      nama,
+      wa,
+      pesanan,
+      total,
+      metodePembayaran
+    );
+
+    console.log(pesanWhatsApp);
+
+    // return;
+
+    $("#konfirmasiPesanan")
+      .attr("href", pesanWhatsApp)
+      .attr("target", "_blank"); // Membuka di tab baru
 
     detailPesanan.html(`
       <strong>ID Pesanan:</strong> ${order.id}<br>
@@ -214,18 +277,15 @@ $(document).ready(function () {
           </div>
         </li>`);
     });
-
     pesananItems.append(
       `<li class="list-group-item d-flex justify-content-between"><strong>Total</strong>Rp. ${total}</li>`
     );
   }
 
-  // Fungsi untuk mendapatkan parameter dari URL
   function getQueryParam(param) {
     return new URLSearchParams(window.location.search).get(param);
   }
 
-  // Buat pesanan baru
   $("#buatPesanan").on("submit", function (e) {
     e.preventDefault();
 
@@ -251,10 +311,10 @@ $(document).ready(function () {
   });
 
   function generateOrderId(nomorIdentitas) {
-    const today = new Date();
-    const day = String(today.getDate()).padStart(2, "0");
-    const month = String(today.getMonth() + 1).padStart(2, "0");
-    return `${nomorIdentitas.substring(0, 3)}${day}${month}${today.getTime()}`;
+    const filteredOrders = orderHistory.filter(
+      (order) => order.nomorIdentitas === nomorIdentitas
+    );
+    return `trx-${nomorIdentitas.substring(0, 6)}${filteredOrders.length}`;
   }
 
   renderCart();
