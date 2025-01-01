@@ -5,7 +5,7 @@ $(document).ready(function () {
   let orderHistory = JSON.parse(localStorage.getItem("orderHistory")) || [];
   let isAdmin = false;
 
-  const reset = getQueryParam("order");
+  const reset = getQueryParam("reset");
 
   if (reset == 1) {
     cart = [];
