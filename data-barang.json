@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Nasi Goreng Special",
+    "price": "20000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Mie Goreng",
+    "price": "15000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Burger Keju",
+    "price": "25000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Pizza Margherita",
+    "price": "50000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Ayam Goreng Kremes",
+    "price": "30000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Bakso Malang",
+    "price": "22000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Sate Ayam",
+    "price": "35000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Nasi Uduk",
+    "price": "18000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Roti Bakar",
+    "price": "12000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Kue Cubir",
+    "price": "8000",
+    "status": 1,
+    "category": "Makanan"
+  },
+  {
+    "name": "Es Teh Manis",
+    "price": "5000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Jus Jeruk",
+    "price": "15000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Es Kelapa Muda",
+    "price": "20000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Kopi Hitam",
+    "price": "12000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Air Mineral 600ml",
+    "price": "4000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Susu Coklat",
+    "price": "8000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Teh Botol 330ml",
+    "price": "6000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Cappuccino",
+    "price": "25000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Smoothie Mangga",
+    "price": "20000",
+    "status": 1,
+    "category": "Minuman"
+  },
+  {
+    "name": "Buku Tulis",
+    "price": "8000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Pulpen",
+    "price": "5000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Pensil 2B",
+    "price": "3000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Penghapus",
+    "price": "2000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Spidol Permanent",
+    "price": "10000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Map File",
+    "price": "15000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Gunting Kertas",
+    "price": "12000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Stapler",
+    "price": "25000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Paperclip",
+    "price": "3000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Kertas A4",
+    "price": "25000",
+    "status": 1,
+    "category": "ATK"
+  },
+  {
+    "name": "Beras 5kg",
+    "price": "50000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Minyak Goreng 1L",
+    "price": "15000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Gula Pasir 1kg",
+    "price": "13000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Tepung Terigu 1kg",
+    "price": "10000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Telur Ayam 1kg",
+    "price": "20000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Susu UHT 1L",
+    "price": "12000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Kopi Bubuk 200g",
+    "price": "25000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Mie Instan 5 Pcs",
+    "price": "12000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Sarden Kaleng 200g",
+    "price": "15000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Kecap Manis 250ml",
+    "price": "8000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Saos Tomat 500ml",
+    "price": "10000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Bubuk Kopi 100g",
+    "price": "20000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Kerupuk 500g",
+    "price": "15000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Kornet Sapi 200g",
+    "price": "20000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Indomie Goreng 5 Pcs",
+    "price": "10000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Sabun Mandi 1kg",
+    "price": "15000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Shampoo 500ml",
+    "price": "25000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Detergen 1kg",
+    "price": "20000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Tisu Toilet 6 Pcs",
+    "price": "12000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Alkohol 70% 100ml",
+    "price": "10000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  },
+  {
+    "name": "Pasta Gigi 100g",
+    "price": "8000",
+    "status": 1,
+    "category": "Bahan Sembako"
+  }
+]
