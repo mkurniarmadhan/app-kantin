@@ -19,104 +19,14 @@
       "category": "ATK"
     },
     {
-      "name": "Pulpen",
-      "price": "3000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Keripik Singkong",
-      "price": "4000",
-      "status": 1,
-      "category": "Snack"
-    },
-    {
-      "name": "Air Mineral",
-      "price": "3000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Notebook",
-      "price": "12000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
       "name": "Kopi Instan",
       "price": "8000",
       "status": 1,
       "category": "Minuman"
     },
     {
-      "name": "Biskuit Coklat",
-      "price": "6000",
-      "status": 1,
-      "category": "Snack"
-    },
-    {
-      "name": "Stapler",
-      "price": "15000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Pulpen Warna-warni",
-      "price": "5000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Susu UHT",
-      "price": "7000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Nasi Goreng",
-      "price": "15000",
-      "status": 1,
-      "category": "Fdll"
-    },
-    {
-      "name": "Kue Cubir",
-      "price": "4000",
-      "status": 1,
-      "category": "Snack"
-    },
-    {
       "name": "Buku Tulis",
       "price": "5000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Teh Botol",
-      "price": "7000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Kacang Goreng",
-      "price": "5000",
-      "status": 1,
-      "category": "Snack"
-    },
-    {
-      "name": "Gula Pasir",
-      "price": "4000",
-      "status": 1,
-      "category": "Fdll"
-    },
-    {
-      "name": "Roti Bakar",
-      "price": "8000",
-      "status": 1,
-      "category": "Fdll"
-    },
-    {
-      "name": "Spidol",
-      "price": "7000",
       "status": 1,
       "category": "ATK"
     }

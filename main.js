@@ -8,12 +8,14 @@ $(document).ready(function () {
   const API_URL =
     "https://my-json-server.typicode.com/mkurniarmadhan/app-kantin/barang";
 
-  // Mengambil daftar produk dari API dan menampilkannya
+  // Mengambil daftar produk dari API
   async function loadBarang(filter = "all") {
     const response = await fetch(API_URL);
     const barang = await response.json();
     items = barang;
     categories = [...new Set(barang.map((item) => item.category))]; // Ambil kategori unik
+
+    console.log(items);
 
     renderKategori();
     renderBarang();
