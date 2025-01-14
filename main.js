@@ -5,9 +5,12 @@ $(document).ready(function () {
   let orderHistory = JSON.parse(localStorage.getItem("orderHistory")) || [];
   let isAdmin = false;
 
+  const API_URL =
+    "https://my-json-server.typicode.com/mkurniarmadhan/app-kantin/barang";
+
   // Mengambil daftar produk dari API dan menampilkannya
   async function loadBarang(filter = "all") {
-    const response = await fetch("http://localhost:3000/api/barang");
+    const response = await fetch(API_URL);
     const barang = await response.json();
     items = barang;
     categories = [...new Set(barang.map((item) => item.category))]; // Ambil kategori unik

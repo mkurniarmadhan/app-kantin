@@ -1,304 +1,124 @@
 {
   "barang": [
     {
-      "name": "Nasi Goreng Special",
-      "price": "20000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Mie Goreng",
-      "price": "15000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Burger Keju",
-      "price": "25000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Pizza Margherita",
-      "price": "50000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Ayam Goreng Kremes",
-      "price": "30000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Bakso Malang",
-      "price": "22000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Sate Ayam",
-      "price": "35000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Nasi Uduk",
-      "price": "18000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Roti Bakar",
-      "price": "12000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
-      "name": "Kue Cubir",
-      "price": "8000",
-      "status": 1,
-      "category": "Makanan"
-    },
-    {
       "name": "Es Teh Manis",
       "price": "5000",
       "status": 1,
       "category": "Minuman"
     },
     {
-      "name": "Jus Jeruk",
-      "price": "15000",
+      "name": "Mie Instan Goreng",
+      "price": "7000",
       "status": 1,
-      "category": "Minuman"
+      "category": "Snack"
     },
     {
-      "name": "Es Kelapa Muda",
-      "price": "20000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Kopi Hitam",
-      "price": "12000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Air Mineral 600ml",
-      "price": "4000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Susu Coklat",
-      "price": "8000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Teh Botol 330ml",
-      "price": "6000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Cappuccino",
-      "price": "25000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Smoothie Mangga",
-      "price": "20000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Buku Tulis",
-      "price": "8000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Pulpen",
-      "price": "5000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Pensil 2B",
-      "price": "3000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Penghapus",
+      "name": "Pensil",
       "price": "2000",
       "status": 1,
       "category": "ATK"
     },
     {
-      "name": "Spidol Permanent",
-      "price": "10000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Map File",
-      "price": "15000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Gunting Kertas",
-      "price": "12000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Stapler",
-      "price": "25000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Paperclip",
+      "name": "Pulpen",
       "price": "3000",
       "status": 1,
       "category": "ATK"
     },
     {
-      "name": "Kertas A4",
-      "price": "25000",
+      "name": "Keripik Singkong",
+      "price": "4000",
+      "status": 1,
+      "category": "Snack"
+    },
+    {
+      "name": "Air Mineral",
+      "price": "3000",
+      "status": 1,
+      "category": "Minuman"
+    },
+    {
+      "name": "Notebook",
+      "price": "12000",
       "status": 1,
       "category": "ATK"
     },
     {
-      "name": "Beras 5kg",
-      "price": "50000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Minyak Goreng 1L",
-      "price": "15000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Gula Pasir 1kg",
-      "price": "13000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Tepung Terigu 1kg",
-      "price": "10000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Telur Ayam 1kg",
-      "price": "20000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Susu UHT 1L",
-      "price": "12000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Kopi Bubuk 200g",
-      "price": "25000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Mie Instan 5 Pcs",
-      "price": "12000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Sarden Kaleng 200g",
-      "price": "15000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Kecap Manis 250ml",
+      "name": "Kopi Instan",
       "price": "8000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "Minuman"
     },
     {
-      "name": "Saos Tomat 500ml",
-      "price": "10000",
+      "name": "Biskuit Coklat",
+      "price": "6000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "Snack"
     },
     {
-      "name": "Bubuk Kopi 100g",
-      "price": "20000",
-      "status": 1,
-      "category": "Bahan Sembako"
-    },
-    {
-      "name": "Kerupuk 500g",
+      "name": "Stapler",
       "price": "15000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "ATK"
     },
     {
-      "name": "Kornet Sapi 200g",
-      "price": "20000",
+      "name": "Pulpen Warna-warni",
+      "price": "5000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "ATK"
     },
     {
-      "name": "Indomie Goreng 5 Pcs",
-      "price": "10000",
+      "name": "Susu UHT",
+      "price": "7000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "Minuman"
     },
     {
-      "name": "Sabun Mandi 1kg",
+      "name": "Nasi Goreng",
       "price": "15000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "Fdll"
     },
     {
-      "name": "Shampoo 500ml",
-      "price": "25000",
+      "name": "Kue Cubir",
+      "price": "4000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "Snack"
     },
     {
-      "name": "Detergen 1kg",
-      "price": "20000",
+      "name": "Buku Tulis",
+      "price": "5000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "ATK"
     },
     {
-      "name": "Tisu Toilet 6 Pcs",
-      "price": "12000",
+      "name": "Teh Botol",
+      "price": "7000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "Minuman"
     },
     {
-      "name": "Alkohol 70% 100ml",
-      "price": "10000",
+      "name": "Kacang Goreng",
+      "price": "5000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "Snack"
     },
     {
-      "name": "Pasta Gigi 100g",
+      "name": "Gula Pasir",
+      "price": "4000",
+      "status": 1,
+      "category": "Fdll"
+    },
+    {
+      "name": "Roti Bakar",
       "price": "8000",
       "status": 1,
-      "category": "Bahan Sembako"
+      "category": "Fdll"
+    },
+    {
+      "name": "Spidol",
+      "price": "7000",
+      "status": 1,
+      "category": "ATK"
     }
   ],
   "pesanan": []
