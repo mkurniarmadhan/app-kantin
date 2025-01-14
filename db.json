@@ -1,34 +1,10 @@
 {
   "barang": [
     {
-      "name": "Es Teh Manis",
-      "price": "5000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Mie Instan Goreng",
-      "price": "7000",
-      "status": 1,
-      "category": "Snack"
-    },
-    {
-      "name": "Pensil",
-      "price": "2000",
-      "status": 1,
-      "category": "ATK"
-    },
-    {
-      "name": "Kopi Instan",
-      "price": "8000",
-      "status": 1,
-      "category": "Minuman"
-    },
-    {
-      "name": "Buku Tulis",
-      "price": "5000",
-      "status": 1,
-      "category": "ATK"
+      "id": 1,
+      "nama": "Es Teh Manis",
+      "harga": "5000",
+      "kategori": "Minuman"
     }
   ],
   "pesanan": []
